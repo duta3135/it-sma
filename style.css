@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main main"
+    "footer footer footer";
+  height: 100vh;
+}
+header {
+  background-color: rgb(116, 178, 236);
+  grid-area: header;
+}
+nav {
+  background-color: #fc6767;
+  grid-area: nav;
+  padding: 10px;
+}
+main {
+  background-color: rgb(113, 255, 156);
+  grid-area: main;
+  overflow-y: scroll;
+  padding: 0.5em 0.5em;
+}
+footer {
+  background-color: rgb(253, 151, 240);
+  grid-area: footer;
+  text-align: center;
+}
+div {
+  background-color: rgb(255, 204, 94);
+  height: 80px;
+  margin: 0.5em 0;
+  border-radius: 5px;
+  padding: 10px;
+}
